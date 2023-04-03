@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<div class="card">
+  <h1>Simple Restful Calculator</h1>
+
+  <div class="calc-area">
+    <input id="operand1" type="text" class="button">
+    <select id="operator" class="button">
+      <option value="sum">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option>
+    </select>
+    <input id="operand2" type="text" class="button">	
+    <span> = </span>
+    <input type="text" class="button" id="result" disabled />
+  </div>
+  <div class="compute-btn-area">
+    <input type="button" class="button" value="Compute" onclick="computeValue()"/>
+  </div>
+</div>
